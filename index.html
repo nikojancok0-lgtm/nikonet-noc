@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NIKONET NOC</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#0b1220;color:#e8eefb;font-family:Arial,sans-serif}
+header{padding:24px 18px;background:#111c30;border-bottom:1px solid #26344b}
+h1{margin:0;color:#49dcb1;font-size:25px}
+header p{color:#a8b7ce;margin-bottom:0}
+main{padding:16px;max-width:800px;margin:auto}
+.card{background:#142137;border:1px solid #293b56;border-radius:14px;padding:18px;margin-bottom:14px}
+.label{color:#a8b7ce;font-size:14px}
+.value{font-size:22px;font-weight:bold;margin-top:9px}
+.status{color:#f6c667}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.note{font-size:13px;line-height:1.6;color:#b9c7da}
+button{background:#19b88a;color:#061b17;border:0;border-radius:9px;padding:12px 15px;font-weight:bold}
+footer{text-align:center;color:#8292aa;font-size:12px;padding:15px}
+@media(max-width:380px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+<h1>NIKONET NOC</h1>
+<p>Network Operation Center</p>
+</header>
+<main>
+<div class="card">
+<div class="label">Status Dashboard</div>
+<div class="value status">MODE DEMO</div>
+<p class="note">Tampilan awal berhasil disiapkan. Data MikroTik belum terhubung.</p>
+</div>
+<div class="grid">
+<div class="card">
+<div class="label">MikroTik</div>
+<div class="value">Belum terhubung</div>
+</div>
+<div class="card">
+<div class="label">CPU Router</div>
+<div class="value">-- %</div>
+</div>
+<div class="card">
+<div class="label">Ping Internet</div>
+<div class="value">-- ms</div>
+</div>
+<div class="card">
+<div class="label">PPPoE Online</div>
+<div class="value">-- pelanggan</div>
+</div>
+</div>
+<div class="card">
+<div class="label">PPPoE Offline</div>
+<div class="value">-- pelanggan</div>
+</div>
+<div class="card">
+<strong>Langkah selanjutnya</strong>
+<p class="note">Dashboard ini baru tampilan awal. Pemantauan langsung membutuhkan backend dan koneksi VPN yang aman ke MikroTik.</p>
+<button onclick="alert('Dashboard NIKONET NOC versi demo siap!')">Tes Dashboard</button>
+</div>
+</main>
+<footer>NIKONET © 2026</footer>
+</body>
+</html>
